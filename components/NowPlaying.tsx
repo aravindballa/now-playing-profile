@@ -129,7 +129,7 @@ export const Player: React.FC<Props> = ({
             }
         `}
       </style>
-      <div>
+      <div style={{ paddingTop: 8, paddingLeft: 4 }}>
         <Text className="header">
           I'm currently listening to this 👇 on Spotify!
         </Text>
