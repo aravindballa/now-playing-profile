@@ -20,7 +20,7 @@ export const Player: React.FC<Props> = ({
   isPlaying,
 }) => {
   return isPlaying ? (
-    <ReadmeImg width="256" height="85">
+    <ReadmeImg width="280" height="85">
       <style>
         {`
             .paused { 
@@ -38,6 +38,10 @@ export const Player: React.FC<Props> = ({
             p {
               display: block;
               opacity: 0;
+            }
+
+            p.header {
+              opacity: 1;
             }
 
             .progress-bar {
@@ -126,7 +130,9 @@ export const Player: React.FC<Props> = ({
         `}
       </style>
       <div>
-        <Text>I'm currently listening to this 👇 on Spotify!</Text>
+        <Text className="header">
+          I'm currently listening to this 👇 on Spotify!
+        </Text>
       </div>
       <div
         className={isPlaying ? "disabled" : ""}
