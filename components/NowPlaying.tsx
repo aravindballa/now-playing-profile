@@ -20,7 +20,7 @@ export const Player: React.FC<Props> = ({
   isPlaying,
 }) => {
   return isPlaying ? (
-    <ReadmeImg width="256" height="64">
+    <ReadmeImg width="256" height="85">
       <style>
         {`
             .paused { 
@@ -125,7 +125,9 @@ export const Player: React.FC<Props> = ({
             }
         `}
       </style>
-      <Text>I'm currently listening to this 👇 on Spotify!</Text>
+      <div>
+        <Text>I'm currently listening to this 👇 on Spotify!</Text>
+      </div>
       <div
         className={isPlaying ? "disabled" : ""}
         style={{
